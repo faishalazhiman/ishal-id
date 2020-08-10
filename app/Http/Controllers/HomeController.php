@@ -15,4 +15,9 @@ class HomeController extends Controller
             return view('welcome');
         }
     }
+
+    public function blog()
+    {
+        return redirect('https://blog.ishal-id.com');
+    }
 }
