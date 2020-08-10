@@ -17,7 +17,7 @@ Route::group(['middleware' => 'web'], function(){
     //     return view('welcome');
     // });
     Route::get('/', 'HomeController@index');
-    Route::get('/', 'HomeController@blog');
+    Route::get('/blog', 'HomeController@blog');
     
     Route::get('/profile', function () {
         return view('profile');
